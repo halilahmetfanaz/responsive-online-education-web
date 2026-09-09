@@ -4,5 +4,5 @@ A multi-page responsive educational platform interface built with HTML, CSS and 
 
 ## Key Features
 - Structured across multiple pages with clean navigation flow.
-- Responsive Layouts: 768px, 1024px and 320px.
+- Designed for desktops by default, with a responsive breakpoint at 720px.
 - JavaScript event handling prevents default submission, validates user input and provides a dynamic feedback.
