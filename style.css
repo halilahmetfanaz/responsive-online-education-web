@@ -1,0 +1,369 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f5f9ff;
+}
+
+nav{
+    background-color: #edf4fc;
+    width: 100%;
+    border-bottom: 1px solid #e3eaf3;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1e3a5f;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.links a{
+    color: #2c4a6b;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s;
+
+}
+
+.links a:hover{
+    color: #16324a;
+    border-bottom: 2px solid #16324a;
+}
+
+.links a.active{
+    color: #16324a;
+    border-bottom: 2px solid #16324a;
+}
+
+.about{
+    padding: 50px;
+    margin-bottom: 50px;
+
+}
+
+.about-inner{
+    background-color: #f8fbff;
+    padding: 50px 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-label{
+    display: inline-block;
+    background-color: transparent;
+    color: #1e3a5f;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    margin-bottom: 15px;
+}
+
+.about-text p{
+    font-size: 1.1rem;
+    color: #4a5c74;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.about-image img{
+    width: 85%;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #1e3a5f;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: #16324a;
+    color: #edf4fc;
+}
+
+.areas-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.areas-header h2{
+    font-size: 2rem;
+    color: #1e3a5f;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.areas{
+    margin: 0 auto;
+    padding: 60px 50px;
+}
+
+.areas-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.areas-card{
+    background-color: #fff;
+    border: 2px solid #e3eaf3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.areas-card-img{
+    height: 220px;
+    background-color: #f8fbff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.areas-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bottom{
+    background-color: #edf4fc;
+    padding: 30px 50px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid #e3eaf3;
+}
+
+.course-intro{
+    text-align: center;
+    padding: 60px 50px 40px;
+}
+
+.course-intro h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.course-intro p{
+    font-size: 1rem;
+    color: #4a5c74;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.courses-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.course-box{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #e3eaf3;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.course-box li{
+    list-style-type: none;
+}
+
+.course-image img{
+    width: 300px;
+    max-width: 100%;
+}
+
+.course-content h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.course-content p{
+    font-size: 1.1rem;
+    color: #4a5c74;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.basics-btn{
+    display: inline-block;
+    background-color: #1e3a5f;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.basics-btn:hover{
+    background-color: #16324a;
+    color: #edf4fc;
+}
+
+.contact-intro{
+    text-align: center;
+    padding: 60px 50px 40px;
+}
+
+.contact-intro h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.contact-intro p{
+    font-size: 1rem;
+    color: #4a5c74;
+    line-height: 1.7;
+}
+
+.contact-form-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 10px 50px 80px;
+}
+
+.contact-image img{
+    width: 700px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #1e3a5f;
+    font-size: 1rem;
+}
+
+.form-group input, .form-group select, .form-group textarea{
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dbe4f0;
+    border-radius: 10px;
+    background-color: #f8fbff;
+    font-size: 1rem;
+
+}
+
+.submit-btn{
+    background-color: #1e3a5f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: #16324a;
+}
+
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus{
+    background-color: #f1f6fc;
+    border-color: #1e3a5f;
+
+}
+
+.form-group input:invalid:focus{
+    border: 1px solid #d9534f;
+}
+
+.form-message{
+    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-message--success{
+    color: #1e7145;
+}
+
+.form-message--error{
+    color: #d9534f;
+}
+
+@media (max-width: 768px){
+    nav{
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        
+    }
+
+     .about-inner, .course-box, .contact-form-part{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-inner{
+        padding: 35px 25px;
+        gap: 30px;
+    }
+
+    .about-image img{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .areas-grid{
+        grid-template-columns: 1fr;
+    }
+
+   
+}
